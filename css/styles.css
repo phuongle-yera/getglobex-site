@@ -1,6 +1,6 @@
 @import url("tokens.css");
 
-/* Globex Trade — World-market mood PRIMARY (Phương via Mira · 2026-10-24 Asia/Saigon)
+/* GetGlobex — World-market mood PRIMARY
    Cool light canvas + luminous buyer↔seller world-network + glass match path.
    Tokens: --gt-indigo-glow #6B7CFF · --gt-network-line* · terracotta CTAs.
    NOT dark slate lead · NOT Warm Heritage cream · NOT precise-tool brochure.
@@ -115,6 +115,7 @@ textarea:focus-visible, button:focus-visible {
 }
 .logo img.logo-mark { width: 32px; height: 32px; flex-shrink: 0; border-radius: 8px; }
 .logo img.logo-wordmark { height: 28px; width: auto; }
+.site-header .logo img.logo-wordmark { height: 32px; } /* header wordmark: 32px to match the mark; footer stays 28px */
 .logo .logo-text { font-family: var(--gt-font-wordmark); font-weight: 600; color: var(--gt-ink); }
 .logo .logo-text b { color: var(--gt-terracotta); font-weight: 600; margin-left: 0.15rem; }
 .logo.light { color: var(--gt-dark-ink); }
@@ -128,6 +129,7 @@ textarea:focus-visible, button:focus-visible {
 }
 .nav a:not(.btn):hover { color: var(--gt-indigo); }
 .nav a.active { color: var(--gt-indigo); font-weight: 650; }
+.nav a.btn-accent, .nav a.btn-accent:hover { color: var(--gt-color-on-accent); } /* on-accent text on #A84A2C / #8E3B22 pill */
 .nav-cta { display: flex; align-items: center; gap: 0.55rem; }
 .nav-text-link {
   color: var(--gt-stone) !important;
