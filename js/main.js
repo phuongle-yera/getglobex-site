@@ -200,7 +200,7 @@
         if (firstBad) firstBad.focus();
         return;
       }
-      // On-page preview only — nothing stored/emailed; no mailto. Mira+SEO stub panels.
+      // On-page preview only — nothing stored/emailed; no mailto.
       var summary = serializeForm(form);
       form.classList.add('is-hidden');
       if (success) {
