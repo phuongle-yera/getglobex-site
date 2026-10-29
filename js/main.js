@@ -152,7 +152,7 @@
       f.addEventListener('input', function () {
         clearFieldError(f);
         if (note && note.classList.contains('err')) {
-          note.textContent = 'Draft form — nothing is stored or sent by Globex yet. Submit only checks required fields and shows a preview on this page.';
+          note.textContent = 'Draft form — nothing is stored or sent by GetGlobex yet. Submit only checks required fields and shows a preview on this page.';
           note.className = 'form-note';
         }
       });
