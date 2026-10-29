@@ -1,6 +1,6 @@
 # Globex Trade
 
-> Globex Trade (getglobex.com) is an AI-powered matching marketplace for US importers and suppliers worldwide. Bring your HS code, get a ranked shortlist of suppliers already shipping on US import lanes, then a free matched intro. Priority seed origins are Vietnam, India and Mexico. Globex Trade is not a trading company or a product catalog, and it does not take title to goods.
+> Globex Trade (getglobex.com) is an AI-powered matching marketplace for US importers and suppliers worldwide. We are not a broker, and we don't offer forex, CFD or investment products. Bring your HS code, get a ranked shortlist of suppliers already shipping on US import lanes, then a free matched intro. Priority seed origins are Vietnam, India and Mexico. Globex Trade is not a trading company or a product catalog, and it does not take title to goods.
 
 Key facts (from the site):
 
