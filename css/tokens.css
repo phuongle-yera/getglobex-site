@@ -30,6 +30,9 @@
 
   --gt-terracotta:      #C45C3A;   /* Luminous terracotta — primary CTA */
   --gt-terracotta-hover:#A84B2F;   /* Hover on light surfaces */
+  --gt-terracotta-cta:  #A84A2C;   /* CTA fill — white text 5.7:1 (WCAG AA) */
+  --gt-terracotta-cta-hover: #8E3B22; /* CTA hover — darker step */
+  --gt-terracotta-text: #A84A2C;   /* Terracotta text on light surfaces (AA) */
   --gt-terracotta-soft: #F3E4DE;   /* Soft terracotta wash on light */
 
   --gt-offwhite:        #FFFFFF;   /* Glass card fill / pure panel */
@@ -38,6 +41,7 @@
 
   --gt-gold:            #D4A017;   /* Highlight / mark accent */
   --gt-gold-dark:       #B8860B;
+  --gt-gold-on-light:   #7F6200;   /* Gold text on light canvas (AA: 5.1:1 on #EEF1F7, 5.3:1 on #F4F6FA) */
   --gt-gold-soft:       #F5EDD8;   /* Soft gold wash on light */
 
   /* Neutrals on light canvas */

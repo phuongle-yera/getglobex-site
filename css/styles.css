@@ -69,10 +69,10 @@ p { text-wrap: pretty; }
 .btn:hover { transform: translateY(-2px); background: var(--gt-indigo-soft); box-shadow: var(--gt-shadow-sm); }
 .btn:active { transform: translateY(0); }
 .btn-accent {
-  background: var(--gt-terracotta); color: var(--gt-color-on-accent);
+  background: var(--gt-terracotta-cta); color: var(--gt-color-on-accent);
   box-shadow: var(--gt-shadow-cta);
 }
-.btn-accent:hover { background: var(--gt-terracotta-hover); box-shadow: var(--gt-shadow-cta); }
+.btn-accent:hover { background: var(--gt-terracotta-cta-hover); box-shadow: var(--gt-shadow-cta); }
 .btn-ghost {
   background: transparent; border-color: var(--gt-line-strong); color: var(--gt-indigo);
 }
@@ -87,7 +87,7 @@ textarea:focus-visible, button:focus-visible {
 .eyebrow {
   font-size: var(--gt-fs-eyebrow); font-weight: var(--gt-fw-semibold);
   text-transform: uppercase; letter-spacing: var(--gt-tracking-eyebrow);
-  color: var(--gt-gold); margin-bottom: 0.85rem;
+  color: var(--gt-gold-on-light); margin-bottom: 0.85rem;
 }
 .placeholder-note {
   font-size: 0.78rem; color: var(--gt-stone); margin-top: 1.75rem;
@@ -188,6 +188,7 @@ textarea:focus-visible, button:focus-visible {
 .seller-secondary {
   margin-top: 0.25rem; font-size: 0.9rem; color: var(--gt-stone);
 }
+.site-footer .seller-secondary { color: var(--gt-dark-stone); } /* AA on dark footer */
 .seller-secondary a {
   color: var(--gt-gold); font-weight: 600; text-decoration: underline;
   text-decoration-color: rgba(212, 160, 23, 0.35); text-underline-offset: 3px;
@@ -329,7 +330,7 @@ textarea:focus-visible, button:focus-visible {
   padding-bottom: 2.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 .footer-grid > div:first-child p { margin-top: 1rem; max-width: 280px; line-height: 1.6; }
-.footer-grid h4 {
+.footer-grid h4, .footer-grid .footer-h {
   color: var(--gt-dark-ink); font-size: 0.75rem; text-transform: uppercase;
   letter-spacing: 0.12em; margin-bottom: 1rem; font-weight: 650;
 }
@@ -417,7 +418,7 @@ body.page-match main > .page-hero:first-child {
 }
 .audience-card.lead-card { border-top: 3px solid var(--gt-terracotta); }
 .audience-card.secondary-card { opacity: 0.96; }
-.audience-card .eyebrow { margin-bottom: 0; color: var(--gt-terracotta); }
+.audience-card .eyebrow { margin-bottom: 0; color: var(--gt-terracotta-text); }
 .audience-card h3 {
   font-family: var(--gt-font-display); font-size: 1.45rem;
   color: var(--gt-ink-on-light); font-weight: 600;
@@ -456,7 +457,7 @@ body.page-match main > .page-hero:first-child {
 }
 .cert-label {
   font-size: 0.78rem; font-weight: 650; text-transform: uppercase;
-  letter-spacing: 0.12em; color: var(--gt-terracotta); margin-bottom: 1rem;
+  letter-spacing: 0.12em; color: var(--gt-terracotta-text); margin-bottom: 1rem;
 }
 
 .cta-band {
@@ -609,7 +610,7 @@ body.page-match main > .page-hero:first-child {
 .diff-card li::before { content: "·"; position: absolute; left: 0; color: var(--gt-terracotta); font-weight: 700; }
 
 .breadcrumb { font-size: 0.82rem; color: var(--gt-stone); margin-bottom: 1rem; }
-.breadcrumb a { color: var(--gt-gold); font-weight: 600; }
+.breadcrumb a { color: var(--gt-gold-on-light); font-weight: 600; }
 .breadcrumb a:hover { text-decoration: underline; }
 
 .category-strip {
@@ -691,7 +692,7 @@ body.page-match main > .page-hero:first-child {
   padding-bottom: clamp(2.25rem, 4.5vw, 3.25rem);
 }
 .hero-matching .hero-copy .eyebrow {
-  color: var(--gt-gold);
+  color: var(--gt-gold-on-light);
   position: relative; display: inline-block;
   padding-bottom: 0.45rem; margin-bottom: 0.85rem;
 }
@@ -1121,7 +1122,7 @@ body.page-match main > .page-hero:first-child {
 .blog-card h2 a { color: var(--gt-ink-on-light); text-decoration: none; }
 .blog-card h2 a:hover { color: var(--gt-terracotta); }
 .blog-card p { margin: 0; color: #5A6280; font-size: 0.95rem; line-height: 1.6; }
-.blog-meta { font-size: 0.78rem; font-weight: 650; letter-spacing: 0.03em; color: var(--gt-terracotta); text-transform: uppercase; }
+.blog-meta { font-size: 0.78rem; font-weight: 650; letter-spacing: 0.03em; color: var(--gt-terracotta-text); text-transform: uppercase; }
 .blog-post { max-width: 760px; }
 .blog-post .post-body p { color: #5A6280; font-size: 1.05rem; line-height: 1.7; margin: 0 0 1.15rem; }
 .blog-post .post-body a { color: var(--gt-terracotta-hover); font-weight: 650; }
