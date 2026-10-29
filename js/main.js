@@ -3,6 +3,9 @@
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.getElementById('nav');
   var yearEl = document.getElementById('year');
+  var I18N = {};
+  try { var i18nEl = document.getElementById('gg-i18n'); if (i18nEl) I18N = JSON.parse(i18nEl.textContent) || {}; } catch (e) {}
+  function t(s) { return I18N[s] || s; }
 
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
@@ -17,14 +20,14 @@
     toggle.addEventListener('click', function () {
       var open = nav.classList.toggle('open');
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      toggle.setAttribute('aria-label', t(open ? 'Close menu' : 'Open menu'));
       document.body.style.overflow = open ? 'hidden' : '';
     });
     nav.querySelectorAll('a').forEach(function (a) {
       a.addEventListener('click', function () {
         nav.classList.remove('open');
         toggle.setAttribute('aria-expanded', 'false');
-        toggle.setAttribute('aria-label', 'Open menu');
+        toggle.setAttribute('aria-label', t('Open menu'));
         document.body.style.overflow = '';
       });
     });
@@ -32,7 +35,7 @@
       if (e.key === 'Escape' && nav.classList.contains('open')) {
         nav.classList.remove('open');
         toggle.setAttribute('aria-expanded', 'false');
-        toggle.setAttribute('aria-label', 'Open menu');
+        toggle.setAttribute('aria-label', t('Open menu'));
         document.body.style.overflow = '';
         toggle.focus();
       }
@@ -129,14 +132,14 @@
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(text).then(
             function () {
-              btn.textContent = 'Copied on this device';
+              btn.textContent = t('Copied on this device');
             },
             function () {
-              btn.textContent = 'Copy failed — select summary manually';
+              btn.textContent = t('Copy failed — select summary manually');
             }
           );
         } else {
-          btn.textContent = 'Select the summary text to copy';
+          btn.textContent = t('Select the summary text to copy');
         }
       };
     }
@@ -152,20 +155,20 @@
       f.addEventListener('input', function () {
         clearFieldError(f);
         if (note && note.classList.contains('err')) {
-          note.textContent = 'Draft form — nothing is stored or sent by GetGlobex yet. Submit only checks required fields and shows a preview on this page.';
+          note.textContent = t('Draft form — nothing is stored or sent by GetGlobex yet. Submit only checks required fields and shows a preview on this page.');
           note.className = 'form-note';
         }
       });
       f.addEventListener('blur', function () {
         if (!f.hasAttribute('required')) return;
         if (f.type === 'checkbox') {
-          if (!f.checked) showFieldError(f, 'Please confirm to continue.');
+          if (!f.checked) showFieldError(f, t('Please confirm to continue.'));
           return;
         }
         var v = f.value.trim();
-        if (!v) showFieldError(f, 'This field is required.');
+        if (!v) showFieldError(f, t('This field is required.'));
         else if (f.type === 'email' && !/^\S+@\S+\.\S+$/.test(v))
-          showFieldError(f, 'Enter a valid email address.');
+          showFieldError(f, t('Enter a valid email address.'));
       });
     });
 
@@ -184,17 +187,17 @@
         if (bad) {
           ok = false;
           if (!firstBad) firstBad = f;
-          if (f.type === 'checkbox') showFieldError(f, 'Please confirm to continue.');
+          if (f.type === 'checkbox') showFieldError(f, t('Please confirm to continue.'));
           else
             showFieldError(
               f,
-              !f.value.trim() ? 'This field is required.' : 'Enter a valid email address.'
+              !f.value.trim() ? t('This field is required.') : t('Enter a valid email address.')
             );
         }
       });
       if (!ok) {
         if (note) {
-          note.textContent = 'Please fix the highlighted fields and try again.';
+          note.textContent = t('Please fix the highlighted fields and try again.');
           note.className = 'form-note err';
         }
         if (firstBad) firstBad.focus();
