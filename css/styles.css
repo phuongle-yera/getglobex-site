@@ -1406,7 +1406,7 @@ label.hs-field-glass input {
 
 /* ---------- (A) TOKENS ---------- */
 :root {
-  /* CTA terracotta — DEV Manager darkened values (WCAG AA w/ white text) */
+  /* CTA terracotta — darkened values (WCAG AA w/ white text) */
   --gt-terracotta-cta:       #A84A2C;  /* white text 5.71:1 */
   --gt-terracotta-cta-hover: #8E3B22;  /* white text 7.50:1 */
   --gt-terracotta-text:      #A84A2C;  /* terracotta text on white 5.71 / on #EEF1F7 5.04 */
@@ -1603,7 +1603,7 @@ label.hs-field-glass input {
   .nav { left: auto; width: min(400px, 100%); border-left: 1px solid var(--gt-line); border-bottom-left-radius: var(--gt-radius-lg); }
 }
 
-/* "Where we're matching first" / "Where US importers are buying" cards: design-polish v2 (Nova spec v2 §4, adapted to .mf-*) */
+/* "Where we're matching first" / "Where US importers are buying" cards: design polish (adapted to .mf-*) */
 .mf-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; align-items: stretch; }
 .mf-card { position: relative; display: flex; flex-direction: column;
   background: var(--gt-glass-strong); border: 1px solid var(--gt-glass-border);
@@ -1764,3 +1764,43 @@ html:is([lang^="es"],[lang^="vi"]) .mf-card__title, html:is([lang^="es"],[lang^=
 .lang-suggest a { font-weight: 650; }
 .lang-suggest button { margin-left: auto; background: none; border: 1px solid currentColor; border-radius: 8px; padding: 0.35rem 0.7rem; cursor: pointer; font: inherit; color: inherit; min-height: 32px; }
 :lang(vi) h1, :lang(vi) h2, :lang(es-MX) h1, :lang(es-MX) h2 { overflow-wrap: break-word; hyphens: auto; }
+
+/* ---- Mobile fix pack: layout, tap targets, legibility (CSS only) ---- */
+/* Contact "How do you want to start?" cards: own layout, independent of the Home .path-card grid */
+.path-card.path-card--contact {
+  display: flex; flex-direction: column; gap: 0.65rem; align-items: stretch;
+  padding: 1.55rem 1.4rem; min-height: 0;
+  border: 1px solid var(--gt-glass-border); border-radius: var(--gt-radius-lg);
+  box-shadow: var(--gt-shadow-sm);
+}
+.path-card.path-card--contact.path-card-primary { border-top: 3px solid var(--gt-terracotta); }
+.path-card.path-card--contact:hover { transform: none; box-shadow: var(--gt-shadow-sm); }
+.path-card.path-card--contact::after { content: none; }
+.path-card.path-card--contact > * { min-width: 0; }
+/* Ordered path steps: keep wrapped text out of the number column */
+.path-list li > span { grid-column: 2; min-width: 0; }
+/* Form fields at 16px so iOS does not zoom on focus */
+.form-card input:not([type="checkbox"]):not([type="radio"]),
+.form-card select,
+.form-card textarea { font-size: 16px; }
+/* Compact header CTA (tablet bar) at 44px */
+.nav-cta-compact { min-height: 44px; }
+@media (max-width: 1100px) {
+  /* Checkbox / consent rows as 44px tap targets */
+  .form-card label.check-item, .check-item,
+  .form-card label.consent, .consent { min-height: 44px; }
+  /* Footer links as 44px tap targets */
+  .footer-grid div a:not(.logo) { display: flex; align-items: center; min-height: 44px; margin-bottom: 0; }
+  .lang-switch--footer { gap: 0.5rem 0.35rem; }
+  .lang-switch--footer a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.25rem; }
+  /* Breadcrumb links: 44px tap height without shifting the line */
+  .breadcrumb a { display: inline-block; padding: 12px 0; margin: -12px 0; }
+}
+@media (max-width: 760px) {
+  /* Matching-path / world-network diagram text at 12px or more */
+  .mp-tag, .mp-badge { font-size: 0.75rem; }
+  .mp-steps small, .matching-path.mp-compact .mp-steps small,
+  .wn-caption, .world-network.wn-compact .wn-caption,
+  .mp-note { font-size: 0.8125rem; }
+  .mp-data { font-size: 0.75rem; }
+}
