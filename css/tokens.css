@@ -1,0 +1,200 @@
+/**
+ * Globex Trade — World-market mood PRIMARY (Phương via Mira · 2026-10-24 Asia/Saigon)
+ * Cool light canvas (#F4F6FA / #EEF1F7) + deep indigo ink + luminous terracotta CTAs
+ * + stronger connection-network glow for living buyer↔seller world-market hero.
+ * Board PRIMARY: ui-home-matching-world-market-hero.jpg
+ * Prior light-tech pass: ui-home-matching-light-tech-hero.jpg (archive / prior mood).
+ * Matching marketplace · HS self-serve · example lanes soft. Matching marketplace ≠ EximAgent.
+ * Abstract signals only. Honest ESG framing (no fake claims / badges / scores).
+ *
+ * Dark slate prior pass → --gt-dark-* (archive / footer secondary).
+ * Warm Heritage cream → --gt-archive-* (demoted; do not resurrect as lead).
+ */
+
+:root {
+  /* ------------------------------------------------------------------
+     Color — Brand (Light canvas + world-market glow PRIMARY)
+     ------------------------------------------------------------------ */
+  --gt-canvas:          #F4F6FA;   /* Page / hero canvas — cool light */
+  --gt-canvas-deep:     #EEF1F7;   /* Section tint / soft blue-gray */
+  --gt-canvas-deeper:   #E4E9F2;   /* Hover wash / chip track */
+
+  --gt-indigo:          #2C2A5A;   /* Brand indigo — ink, nodes, panels */
+  --gt-indigo-soft:     #3D3A6E;   /* Elevated indigo / hover */
+  --gt-indigo-muted:    #6B6894;   /* Secondary indigo on light */
+  --gt-indigo-glow:     #6B7CFF;   /* Luminous node/edge accent — world-market connection */
+  --gt-network-line:    rgba(91, 108, 255, 0.45); /* Living lane arcs on light canvas */
+  --gt-network-line-soft: rgba(91, 108, 255, 0.22);
+  --gt-network-node:    #C45C3A;   /* Origin/buyer nodes (terracotta luminous) */
+  --gt-network-node-glow: 0 0 18px rgba(196, 92, 58, 0.35);
+
+  --gt-terracotta:      #C45C3A;   /* Luminous terracotta — primary CTA */
+  --gt-terracotta-hover:#A84B2F;   /* Hover on light surfaces */
+  --gt-terracotta-soft: #F3E4DE;   /* Soft terracotta wash on light */
+
+  --gt-offwhite:        #FFFFFF;   /* Glass card fill / pure panel */
+  --gt-offwhite-deep:   #F4F6FA;   /* Alias canvas */
+  --gt-offwhite-darker: #EEF1F7;   /* Alias canvas-deep */
+
+  --gt-gold:            #D4A017;   /* Highlight / mark accent */
+  --gt-gold-dark:       #B8860B;
+  --gt-gold-soft:       #F5EDD8;   /* Soft gold wash on light */
+
+  /* Neutrals on light canvas */
+  --gt-stone:           #5A6280;   /* Muted body / meta on light */
+  --gt-stone-light:     #8A92A8;   /* Lighter mute */
+  --gt-line:            #D5DCE8;   /* Borders on light */
+  --gt-line-strong:     #C0C8D8;   /* Stronger divider */
+  --gt-ink:             #1A1B2E;   /* Primary text on light canvas */
+  --gt-ink-muted:       #5A6280;   /* Secondary text */
+  --gt-white:           #FFFFFF;   /* White cards / glass */
+  --gt-black:           #0E0F18;
+
+  /* Legacy name bridges (map old names → light tech; do not use warm cream or dark slate as page bg) */
+  --gt-slate:           var(--gt-indigo);        /* Prefer indigo ink; dark slate demoted */
+  --gt-slate-canvas:    var(--gt-canvas);        /* Page canvas is light */
+  --gt-cream:           var(--gt-canvas);        /* Do not use warm #F6F1E8 */
+  --gt-cream-deep:      var(--gt-canvas-deep);
+  --gt-cream-darker:    var(--gt-canvas-deeper);
+  --gt-clay:            #8B90A5;
+  --gt-clay-deep:       #6A7088;
+  --gt-line-on-light:   var(--gt-line);
+  --gt-ink-on-light:    var(--gt-ink);
+
+  /* Semantic aliases (prefer these in components) */
+  --gt-color-primary:       var(--gt-indigo);
+  --gt-color-primary-hover: var(--gt-indigo-soft);
+  --gt-color-accent:        var(--gt-terracotta);
+  --gt-color-accent-hover:  var(--gt-terracotta-hover);
+  --gt-color-highlight:     var(--gt-gold);
+  --gt-color-glow:          var(--gt-indigo-glow);
+  --gt-color-text:          var(--gt-ink);
+  --gt-color-text-muted:    var(--gt-stone);
+  --gt-color-border:        var(--gt-line);
+  --gt-color-surface:       var(--gt-white);
+  --gt-color-surface-tint:  var(--gt-canvas);
+  --gt-color-surface-alt:   var(--gt-canvas-deep);
+  --gt-color-on-primary:    #F4F6FA;
+  --gt-color-on-accent:     #FFFFFF;
+  --gt-color-focus:         var(--gt-indigo-glow);
+
+  /* ------------------------------------------------------------------
+     ARCHIVE / SECONDARY — Dark slate prior pass (Board A′′ dark)
+     Use for footer / rare dark wells only — NOT page canvas primary.
+     ------------------------------------------------------------------ */
+  --gt-dark-slate:           #12131F;
+  --gt-dark-slate-canvas:    #1A1B2E;
+  --gt-dark-indigo:          #2C2A5A;
+  --gt-dark-indigo-soft:     #3D3A6E;
+  --gt-dark-line:            rgba(244, 246, 250, 0.14);
+  --gt-dark-ink:             #F4F6FA;
+  --gt-dark-stone:           #9AA3B5;
+
+  /* ------------------------------------------------------------------
+     ARCHIVE — Warm Heritage (demoted; cream #F6F1E8 no longer leads)
+     Kept for reference boards only (ui-home-matching-futuristic-warm-archive.jpg)
+     ------------------------------------------------------------------ */
+  --gt-archive-cream:           #F6F1E8;
+  --gt-archive-cream-deep:      #EDE6D9;
+  --gt-archive-cream-darker:    #E2D8C8;
+  --gt-archive-terracotta:      #C45C3A;
+  --gt-archive-terracotta-hover:#A84B2F;
+  --gt-archive-indigo:          #2C2A5A;
+  --gt-archive-line:            #E5DDD0;
+  --gt-archive-white:           #FFFCFA;
+
+  /* ------------------------------------------------------------------
+     Typography — Inter lead; Fraunces sparingly (wordmark · soft P2)
+     ------------------------------------------------------------------ */
+  --gt-font-display: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --gt-font-body:    "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --gt-font-wordmark:"Fraunces", Georgia, "Times New Roman", serif; /* soft P2 trails */
+  --gt-font-mono:    ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --gt-fs-display: clamp(2.5rem, 5.5vw, 4rem);
+  --gt-fs-h1:      clamp(2rem, 4vw, 3rem);
+  --gt-fs-h2:      clamp(1.75rem, 3.2vw, 2.5rem);
+  --gt-fs-h3:      1.25rem;
+  --gt-fs-h4:      1.05rem;
+  --gt-fs-body:    1rem;
+  --gt-fs-body-lg: 1.125rem;
+  --gt-fs-sm:      0.875rem;
+  --gt-fs-xs:      0.75rem;
+  --gt-fs-eyebrow: 0.78rem;
+
+  --gt-lh-tight:   1.15;
+  --gt-lh-snug:    1.35;
+  --gt-lh-body:    1.65;
+  --gt-tracking-tight: -0.02em;
+  --gt-tracking-eyebrow: 0.14em;
+
+  --gt-fw-regular: 400;
+  --gt-fw-medium:  500;
+  --gt-fw-semibold: 600;
+  --gt-fw-bold:    700;
+
+  /* ------------------------------------------------------------------
+     Spacing (4px base)
+     ------------------------------------------------------------------ */
+  --gt-space-1:  0.25rem;
+  --gt-space-2:  0.5rem;
+  --gt-space-3:  0.75rem;
+  --gt-space-4:  1rem;
+  --gt-space-5:  1.5rem;
+  --gt-space-6:  2rem;
+  --gt-space-7:  3rem;
+  --gt-space-8:  4rem;
+  --gt-space-9:  6rem;
+
+  --gt-container: 1160px;
+  --gt-gutter:    4%;
+
+  /* ------------------------------------------------------------------
+     Radius — glass cards, soft pills
+     ------------------------------------------------------------------ */
+  --gt-radius-sm:   8px;
+  --gt-radius-md:   12px;
+  --gt-radius-lg:   16px;
+  --gt-radius-xl:   20px;
+  --gt-radius-pill: 999px;
+
+  /* ------------------------------------------------------------------
+     Shadows — soft on light + luminous terracotta CTA + world-market indigo glow
+     ------------------------------------------------------------------ */
+  --gt-shadow-sm:  0 4px 14px -4px rgba(44, 42, 90, 0.12);
+  --gt-shadow-md:  0 12px 32px -12px rgba(44, 42, 90, 0.16);
+  --gt-shadow-lg:  0 24px 48px -16px rgba(44, 42, 90, 0.20);
+  --gt-shadow-cta: 0 10px 28px -8px rgba(196, 92, 58, 0.40);
+  --gt-shadow-glow: 0 0 32px rgba(107, 124, 255, 0.32); /* world-market connection depth */
+
+  /* ------------------------------------------------------------------
+     Motion
+     ------------------------------------------------------------------ */
+  --gt-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --gt-duration: 200ms;
+
+  /* ------------------------------------------------------------------
+     Focus (accessibility) — luminous indigo glow ring
+     ------------------------------------------------------------------ */
+  --gt-focus-ring: 3px solid var(--gt-indigo-glow);
+  --gt-focus-offset: 2px;
+}
+
+/* Dark-surface helpers — footer / rare wells only (NOT page primary) */
+.gt-theme-dark {
+  --gt-color-text:         rgba(244, 246, 250, 0.94);
+  --gt-color-text-muted:   rgba(244, 246, 250, 0.68);
+  --gt-color-border:       rgba(244, 246, 250, 0.14);
+  --gt-color-surface:      var(--gt-dark-indigo);
+  --gt-color-surface-tint: var(--gt-dark-slate-canvas);
+  --gt-color-accent:       var(--gt-terracotta);
+}
+
+/* Light panel (default canvas is already light; glass cards use white) */
+.gt-theme-light-panel {
+  --gt-color-text:         var(--gt-ink);
+  --gt-color-text-muted:   var(--gt-stone);
+  --gt-color-border:       var(--gt-line);
+  --gt-color-surface:      var(--gt-white);
+  --gt-color-surface-tint: var(--gt-canvas-deep);
+}
