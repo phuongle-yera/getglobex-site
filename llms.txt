@@ -1,42 +1,45 @@
 # GetGlobex
 
-> GetGlobex (getglobex.com) is an AI supplier-matching marketplace. We are not a broker, and we don't offer forex, CFD or investment products. It matches US importers with suppliers worldwide: bring your HS code, get a ranked shortlist of suppliers already shipping on US import lanes, then a free matched intro. Priority seed origins are Vietnam, India and Mexico. GetGlobex is not a trading company or a product catalog, and it does not take title to goods.
+> GetGlobex (getglobex.com) is an AI supplier-matching marketplace for US importers. Tell us the product you need, and we shortlist suppliers worldwide that are already shipping it to the US. Know your HS code? Add it. It's free to request a match.
 
-Key facts (from the site):
+GetGlobex (getglobex.com) is an AI supplier-matching marketplace. We are not a broker, and we don't offer forex, CFD or investment products.
 
-- Paths: buyers request a free match; exporters create a free seller profile (join); both are matched on US-lane shipment signals, not storefront claims.
-- Pricing: match requests and matched intros are free while the marketplace densifies; a commission comes later only if density and closed trades justify it.
-- Any HS code can be submitted. Furniture (HS 94) and plastics (HS 39) pages are example lane context only.
-- Status: the site is live, but the match request, seller profile and contact forms are non-collecting previews. Nothing is stored or sent yet.
-- GetGlobex publishes no ratings, testimonials, certifications, ESG scores, supplier counts, GMV or turnaround SLAs.
+## How we differ
 
-## Main pages
+- Catalogs list millions of sellers. GetGlobex shortlists the few already shipping your product to the US.
+- Not a trader, not an agent: buyers and suppliers deal directly, with no paid ranking.
+- Built for small and mid-size US importers. Any product, suppliers worldwide.
+- Not a catalog marketplace: you don't scroll through listings. You describe what you need and get a short list.
+- Evidence: we look at public US customs and import records (for example, bill of lading records). That is a signal, not a certification.
+- We're matching first in furniture & home furnishings and plastic packaging & household products; any product is welcome.
 
-- [Home](https://getglobex.com/): AI matching for US importers and suppliers worldwide: overview, priority origins and how matching works.
-- [For buyers](https://getglobex.com/buyers.html): Customs-proven shortlists for US importers, with free intros while the marketplace densifies.
-- [For sellers](https://getglobex.com/sellers.html): Free seller profile and AI matching to US importers in your HS.
-- [How it works](https://getglobex.com/how-it-works.html): Match path: match request → US-lane shortlist → free matched intro.
-- [About](https://getglobex.com/about.html): What GetGlobex is (and isn't), plus the free-first, commission-later model.
-- [FAQ](https://getglobex.com/faq.html): Straight answers on free matches, finding your HS, origins, timing and lane-scale numbers.
+## Key facts
 
-## Get started
+- Buyers: describe your product to request a match. Know your HS code? Add it. If you're not sure of it, the official US tariff schedule is at https://hts.usitc.gov/.
+- Suppliers: create a supplier profile with the products you make.
+- Request a free match: it's free to request.
+- GetGlobex is not a trading company. We don't buy, sell or hold goods.
+- GetGlobex doesn't publish ratings, testimonials, certifications, ESG scores, supplier counts or sales figures.
+- The match request, supplier profile and contact forms don't store or send anything yet.
 
-- [Request a free match](https://getglobex.com/rfq.html): Buyer match request by HS code (non-collecting preview form).
-- [Create a free seller profile](https://getglobex.com/sellers/join.html): Seller join by HS, origin and US-lane proof (non-collecting preview form).
-- [Contact](https://getglobex.com/contact.html): Paths for match requests, applying to sell, or partnership and other questions.
+## Pages
 
-## Example lanes
+- [Home](https://getglobex.com/): What GetGlobex is and how to start.
+- [For buyers](https://getglobex.com/buyers.html): How US importers get a shortlist of suppliers for their product.
+- [For suppliers](https://getglobex.com/sellers.html): How suppliers worldwide get matched with US importers on the products they make.
+- [How it works](https://getglobex.com/how-it-works.html): The steps from a match request to a supplier shortlist.
+- [About](https://getglobex.com/about.html): Who GetGlobex is for, and what it is and isn't.
+- [FAQ](https://getglobex.com/faq.html): Short answers to common questions.
+- [Request a free match](https://getglobex.com/rfq.html): Tell us your product (and HS code, if you know it).
+- [Supplier sign-up](https://getglobex.com/sellers/join.html): Create a supplier profile.
+- [Contact](https://getglobex.com/contact.html): Questions, partnerships and other requests.
+- [Categories](https://getglobex.com/categories.html): Browse example categories, or describe your own product.
+- [Blog](https://getglobex.com/blog/): Guides on finding and comparing suppliers.
+- [How AI supplier matching works](https://getglobex.com/blog/how-globex-matching-works.html): A plain guide to AI supplier matching.
+- [Privacy](https://getglobex.com/privacy.html): How we handle information.
+- [Terms](https://getglobex.com/terms.html): Terms of use.
 
-- [Categories](https://getglobex.com/categories.html): Browse example US import categories, or enter your own HS.
-- [Furniture (HS 94)](https://getglobex.com/furniture.html): Example lane context for furniture, using public trade data.
-- [Plastics (HS 39)](https://getglobex.com/plastics.html): Example lane context for plastics articles, using public trade data.
+## Example category pages
 
-## Blog
-
-- [How GetGlobex matching works](https://getglobex.com/blog/how-globex-matching-works.html): Signal → customs-proven shortlist → free intro.
-- [Global furniture matching without a six-month sourcing trip](https://getglobex.com/blog/global-furniture-matching.html): How US importers shortlist Vietnam, India and Mexico suppliers from US-lane signals.
-
-## Optional
-
-- [Privacy](https://getglobex.com/privacy.html): Draft privacy notice.
-- [Terms](https://getglobex.com/terms.html): Draft terms of use.
+- [Furniture & home furnishings](https://getglobex.com/furniture.html): Example category page.
+- [Plastic packaging & household products](https://getglobex.com/plastics.html): Example category page.
