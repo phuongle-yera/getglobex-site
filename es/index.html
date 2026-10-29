@@ -44,22 +44,22 @@
     "url": "https://getglobex.com/images/mark.svg"
    },
    "image": "https://getglobex.com/images/hero-matching-photo-only.jpg",
-   "description": "GetGlobex (getglobex.com) es un marketplace de conexión con proveedores mediante IA. No somos un bróker y no ofrecemos productos de forex, CFD ni de inversión. Díganos qué necesita: nuestra IA arma una lista corta de proveedores de todo el mundo con un historial real de envíos a EE. UU. y hace una presentación gratuita. Somos un servicio de conexión, no una empresa comercializadora: no compramos, vendemos ni tomamos la titularidad de la mercancía."
+   "description": "GetGlobex (getglobex.com) es un marketplace de conexión con proveedores mediante IA. Díganos qué necesita: nuestra IA arma una lista corta de proveedores de todo el mundo que, según los registros de importación de EE. UU., envían a EE. UU., y hace una presentación gratuita. Somos un servicio de conexión, no una empresa comercializadora: no compramos, vendemos ni tomamos la titularidad de la mercancía."
   },
   {
    "@type": "WebSite",
    "@id": "https://getglobex.com/#website",
    "name": "GetGlobex",
    "url": "https://getglobex.com/",
+   "description": "Arme una lista corta de los pocos proveedores que ya envían su producto a EE. UU. Cualquier producto, cualquier origen. No somos comerciantes ni agentes: trate directamente, sin posiciones pagadas.",
+   "publisher": {
+    "@id": "https://getglobex.com/#organization"
+   },
    "inLanguage": [
     "en",
     "vi",
     "es-MX"
-   ],
-   "description": "Arme una lista corta de los pocos proveedores que ya envían su producto a EE. UU. Cualquier producto, cualquier origen. No somos comerciantes ni agentes: trate directamente, sin posiciones pagadas.",
-   "publisher": {
-    "@id": "https://getglobex.com/#organization"
-   }
+   ]
   }
  ]
 }
@@ -86,7 +86,7 @@
  }
 }
 </script>
-<script type="application/json" id="gg-i18n">{"Open menu": "Abrir menú", "Close menu": "Cerrar menú", "Copied on this device": "Copiado en este dispositivo", "Copy failed — select summary manually": "No se pudo copiar: seleccione el resumen manualmente", "Select the summary text to copy": "Seleccione el texto del resumen para copiarlo", "Draft form — nothing is stored or sent by GetGlobex yet. Submit only checks required fields and shows a preview on this page.": "Formulario de prueba: GetGlobex todavía no guarda ni envía nada. Al enviar solo se revisan los campos obligatorios y se muestra una vista previa en esta página.", "Please confirm to continue.": "Confirme para continuar.", "This field is required.": "Este campo es obligatorio.", "Enter a valid email address.": "Ingrese un correo electrónico válido.", "Please fix the highlighted fields and try again.": "Corrija los campos marcados e intente de nuevo."}</script>
+<script type="application/json" id="gg-i18n">{"Open menu": "Abrir menú", "Close menu": "Cerrar menú", "Copied on this device": "Copiado en este dispositivo", "Copy failed — select summary manually": "No se pudo copiar: seleccione el resumen manualmente", "Select the summary text to copy": "Seleccione el texto del resumen para copiarlo", "Online requests open soon.": "Pronto abriremos las solicitudes en línea.", "Please confirm to continue.": "Confirme para continuar.", "This field is required.": "Este campo es obligatorio.", "Enter a valid email address.": "Ingrese un correo electrónico válido.", "Please fix the highlighted fields and try again.": "Corrija los campos marcados e intente de nuevo."}</script>
 </head>
 <body>
 <a class="skip" href="#main">Ir al contenido</a>
@@ -110,7 +110,7 @@
         <a href="../rfq.html" class="btn btn-sm btn-accent">Encuentre proveedores, gratis</a>
         <a href="sellers/join.html" class="btn btn-sm btn-outline">Proveedores: regístrese</a>
       </div>
-      <div class="lang-switch lang-switch--header"><span class="lang-switch__label">Idioma:</span> <a href="../index.html" hreflang="en" lang="en" data-lang="en" aria-label="English">EN</a> <a href="../vi/index.html" hreflang="vi" lang="vi" data-lang="vi" aria-label="Tiếng Việt">VI</a> <a href="index.html" hreflang="es-MX" lang="es-MX" data-lang="es-MX" aria-label="Español (México)" aria-current="true">ES</a></div>
+      <div class="lang-switch lang-switch--header"><span class="lang-switch__label">Idioma:</span> <a href="/" hreflang="en" lang="en" data-lang="en" aria-label="English">EN</a> <a href="/vi/" hreflang="vi" lang="vi" data-lang="vi" aria-label="Tiếng Việt">VI</a> <a href="/es/" hreflang="es-MX" lang="es-MX" data-lang="es-MX" aria-label="Español (México)" aria-current="page">ES</a></div>
     </nav>
   </div>
 </header>
@@ -118,7 +118,7 @@
 <main id="main">
 <section class="hero hero-matching hero-ux" id="hero">
   <div class="hero-bg" aria-hidden="true">
-    <img fetchpriority="high" decoding="async" class="hero-bg-photo" src="../images/hero-matching-photo-only.jpg" width="1280" height="720" alt="">
+    <img fetchpriority="high" decoding="async" class="hero-bg-photo" src="../images/hero-matching-photo-only.jpg" srcset="../images/hero-matching-photo-only-1280w.webp 1280w" sizes="100vw" width="1280" height="720" alt="">
     <div class="hero-bg-wash"></div>
     <div class="hero-pattern"></div>
   </div>
@@ -127,7 +127,7 @@
       <p class="eyebrow">Conexión con proveedores mediante IA para importadores de EE. UU.</p>
       <h1>Encuentre proveedores de todo el mundo que ya envían a EE. UU.</h1>
       <p class="lead">Díganos qué necesita. Nuestra IA arma una lista corta de proveedores con historial real de envíos a EE. UU. y le hace una presentación gratuita. GetGlobex (getglobex.com) es un servicio de conexión con proveedores, no una empresa comercializadora.</p>
-      <p class="hero-proof">Los resultados de conexión se basan en registros de importación de EE. UU., así que cada proveedor de su lista corta tiene un historial real de envíos a EE. UU.</p>
+      <p class="hero-proof">Las conexiones parten de registros de importación de EE. UU., no de anuncios. Revisión de proveedores: planeada.</p>
       <div class="hero-cta">
         <a href="../rfq.html" class="btn btn-accent">Encuentre proveedores, gratis</a>
         <a href="sellers/join.html" class="btn btn-outline">Soy proveedor: quiero conectar con compradores de EE. UU.</a>
@@ -219,10 +219,10 @@
 <section class="section section-tint" id="how-it-works">
   <div class="container">
     <div class="section-head"><p class="eyebrow">Cómo funciona</p><h2>Tres pasos para una presentación gratuita</h2></div>
-    <ol class="home-steps">
-      <li><span class="step-num">1</span><h3>Díganos qué necesita</h3><p>Describa el producto con palabras sencillas. El código HS ayuda, pero es opcional.</p></li>
-      <li><span class="step-num">2</span><h3>Nuestra IA arma una lista corta</h3><p>Buscamos proveedores de todo el mundo con un historial real de envíos de ese tipo de producto a EE. UU.</p></li>
-      <li><span class="step-num">3</span><h3>Usted recibe una presentación gratuita</h3><p>Le presentamos a los proveedores que encajan. Usted habla con ellos y decide directamente.</p></li>
+    <ol class="home-steps home-steps--photos">
+      <li class="has-photo"><figure class="step-photo"><img class="gp-photo" src="../images/photos/home-step1-owner-parcels-800.webp" srcset="../images/photos/home-step1-owner-parcels-480.webp 480w, ../images/photos/home-step1-owner-parcels-800.webp 800w, ../images/photos/home-step1-owner-parcels-1200.webp 1200w" sizes="(max-width: 560px) calc(92vw - 3rem), (max-width: 1020px) 34vw, 332px" width="1200" height="800" loading="lazy" decoding="async" alt="Mujer revisando un paquete con su teléfono junto a una laptop y cajas de envío apiladas"></figure><span class="step-num">1</span><h3>Díganos qué necesita</h3><p>Describa el producto con palabras sencillas. El código HS ayuda, pero es opcional.</p></li>
+      <li class="has-photo"><figure class="step-photo"><img class="gp-photo" src="../images/photos/home-step2-furniture-factory-800.webp" srcset="../images/photos/home-step2-furniture-factory-480.webp 480w, ../images/photos/home-step2-furniture-factory-800.webp 800w, ../images/photos/home-step2-furniture-factory-1200.webp 1200w" sizes="(max-width: 560px) calc(92vw - 3rem), (max-width: 1020px) 34vw, 332px" width="1200" height="800" loading="lazy" decoding="async" alt="Trabajadores con cubrebocas lijando paneles de madera para muebles en la planta de una fábrica"></figure><span class="step-num">2</span><h3>Nuestra IA arma una lista corta</h3><p>Buscamos proveedores de todo el mundo cuyos registros de importación de EE. UU. muestran ese tipo de producto.</p></li>
+      <li class="has-photo"><figure class="step-photo"><img class="gp-photo" src="../images/photos/home-step3-video-call-800.webp" srcset="../images/photos/home-step3-video-call-480.webp 480w, ../images/photos/home-step3-video-call-800.webp 800w, ../images/photos/home-step3-video-call-1200.webp 1200w" sizes="(max-width: 560px) calc(92vw - 3rem), (max-width: 1020px) 34vw, 332px" width="1200" height="800" loading="lazy" decoding="async" alt="Hombre en una videollamada con una mujer, laptop sobre un escritorio de madera"></figure><span class="step-num">3</span><h3>Usted recibe una presentación gratuita</h3><p>Le presentamos a los proveedores que encajan. Usted habla con ellos y decide directamente.</p></li>
     </ol>
     <p class="section-foot"><a class="text-link" href="how-it-works.html">Vea cómo funciona</a></p>
   </div>
@@ -230,7 +230,7 @@
 
 <section class="section" id="why">
   <div class="container">
-    <div class="section-head"><p class="eyebrow">Por qué GetGlobex</p><h2>Un servicio de conexión, nada más</h2><p>GetGlobex es un marketplace de conexión con proveedores mediante IA. No somos un bróker y no ofrecemos productos de forex, CFD ni de inversión.</p></div>
+    <div class="section-head"><p class="eyebrow">Por qué GetGlobex</p><h2>Un servicio de conexión, nada más</h2><p>GetGlobex es un marketplace de conexión con proveedores mediante IA. Nosotros conectamos y presentamos; usted trata directamente.</p></div>
     <div class="why-split">
       <div class="why-col"><h3>Lo que hacemos</h3><ul>
         <li>Conectamos importadores de EE. UU. con proveedores de todo el mundo</li>
@@ -251,16 +251,18 @@
 <section class="section section-tint" id="how-we-check">
   <div class="container check-short">
     <div>
-      <p class="eyebrow">Cómo revisamos a los proveedores</p>
+      <p class="eyebrow">Cómo encontramos proveedores</p>
       <h2>Partimos de registros de importación de EE. UU., no de anuncios</h2>
-      <p class="lead" style="margin-top:1rem">Vemos quién ha enviado realmente su tipo de producto a EE. UU. y armamos la lista corta a partir de ahí. Usted sigue haciendo sus propias comprobaciones antes de comprar.</p>
-      <p>Mostramos de dónde viene cada señal sobre un proveedor: sin certificaciones, puntajes ESG, conteos de proveedores, testimonios ni GMV que no podamos respaldar con una fuente.</p>
+      <p class="lead check-lead">Vemos quién ya ha enviado su tipo de producto a EE. UU. y armamos la lista corta a partir de ahí.</p>
     </div>
-    <ul>
-      <li>Qué datos usamos</li>
-      <li>Qué significa "ya envía a EE. UU." y qué no</li>
-      <li>Lo que no afirmamos</li>
-    </ul>
+    <div class="check-side">
+      <dl class="check-facts">
+        <div><dt>Los datos</dt><dd>Registros de importación de EE. UU., que muestran quién envió qué a EE. UU. y cuándo.</dd></div>
+        <div><dt>Qué significa "ya envía a EE. UU."</dt><dd>Ya han enviado su tipo de producto a EE. UU. Eso no significa que hayamos revisado su calidad ni su documentación.</dd></div>
+        <div><dt>Sus propias revisiones siguen siendo importantes</dt><dd>Pida muestras, certificados y referencias antes de comprar. Nuestra propia revisión de proveedores llegará más adelante.</dd></div>
+      </dl>
+      <p class="check-cta"><a class="btn" href="../rfq.html">Encuentre proveedores, gratis</a></p>
+    </div>
   </div>
 </section>
 
@@ -335,7 +337,7 @@
   </div>
   <div class="container footer-bottom">
     <span>© <span id="year">2026</span> GetGlobex.</span>
-    <div class="lang-switch lang-switch--footer"><span class="lang-switch__label">Idioma:</span> <a href="../index.html" hreflang="en" lang="en" data-lang="en">English</a> · <a href="../vi/index.html" hreflang="vi" lang="vi" data-lang="vi">Tiếng Việt</a> · <a href="index.html" hreflang="es-MX" lang="es-MX" data-lang="es-MX" aria-current="true">Español (México)</a></div>
+    <div class="lang-switch lang-switch--footer"><span class="lang-switch__label">Idioma:</span> <a href="/" hreflang="en" lang="en" data-lang="en">English</a><span class="lang-switch__sep" aria-hidden="true">·</span><a href="/vi/" hreflang="vi" lang="vi" data-lang="vi">Tiếng Việt</a><span class="lang-switch__sep" aria-hidden="true">·</span><a href="/es/" hreflang="es-MX" lang="es-MX" data-lang="es-MX" aria-current="page">Español (México)</a></div>
   </div>
 </footer>
 <script src="../js/main.js" defer></script>
