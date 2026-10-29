@@ -1536,7 +1536,12 @@ label.hs-field-glass input {
 .why-col li::before { content: ""; position: absolute; left: 0; top: .6em; width: 8px; height: 8px; border-radius: 50%; background: var(--gt-indigo-glow); }
 .why-col--not li::before { background: none; border: 1.5px solid var(--gt-stone); width: 7px; height: 7px; }
 .check-short { display: grid; grid-template-columns: minmax(0,7fr) minmax(0,5fr); gap: 2.5rem; align-items: center; }
-.check-short ul li { padding: .75rem 0; border-bottom: 1px solid var(--gt-line); color: var(--gt-ink); }
+#how-we-check { padding-bottom: calc(var(--space-section) * .6); }
+.check-short .check-lead { margin-top: 1rem; color: var(--gt-ink-on-light); }
+.check-short .check-cta { margin: 1.75rem 0 0; }
+.check-facts { margin: 0; display: grid; gap: 1.25rem; }
+.check-facts dt { font-weight: 650; color: var(--gt-ink-on-light); line-height: 1.4; }
+.check-facts dd { margin: .3rem 0 0; color: var(--gt-ink-on-light); line-height: 1.55; }
 .text-link { font-weight: 600; color: var(--gt-indigo); text-decoration: underline; text-underline-offset: 3px; }
 .faq-teaser { max-width: 760px; }
 .faq-teaser details { background: #fff; border: 1px solid var(--gt-line); border-radius: var(--gt-radius-md); padding: 0 1.25rem; margin-bottom: .625rem; }
@@ -1551,6 +1556,8 @@ label.hs-field-glass input {
   .hero-ux-grid { grid-template-columns: 1fr; }
   .hero-motif { display: none; }                  /* motif hidden on tablet/mobile to keep paths near the fold */
   .home-steps, .why-split, .check-short { grid-template-columns: 1fr; }
+  .check-short { gap: 1.5rem; }
+  .check-short .check-lead { margin-bottom: 0; }
 }
 @media (max-width: 760px) {
   .path-cards { grid-template-columns: 1fr; gap: .75rem; margin-top: 1.25rem; }
@@ -1701,6 +1708,27 @@ html:is([lang^="es"],[lang^="vi"]) .mf-card__title, html:is([lang^="es"],[lang^=
   .nav .lang-switch a { padding: 0.6rem 0.75rem; }
   .lang-switch--header .lang-switch__label { position: static; width: auto; height: auto; clip: auto; }
 }
+/* ---- lang-switch v2: EN parity + a11y (shared EN/vi/es) ---- */
+.lang-switch a { display: inline-flex; align-items: center; }
+.lang-switch a[aria-current] { color: var(--gt-indigo); }
+.site-footer .lang-switch a[aria-current] { color: inherit; }
+.lang-switch a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.lang-switch__sep { padding: 0 0.1rem; opacity: 0.6; }
+@media (min-width: 1101px) {
+  html:lang(en) .nav .lang-switch { gap: 0; flex-wrap: nowrap; flex-shrink: 0; font-size: 0.875rem; }
+  html:lang(en) .nav .lang-switch a { padding: 0.3rem 0.3rem; min-height: 32px; }
+}
+@media (min-width: 1101px) and (max-width: 1199px) {
+  html:lang(en) .nav { gap: 1rem; } html:lang(en) .nav-links { gap: 1rem; }
+}
+@media (max-width: 1100px) {
+  .nav .lang-switch a, .site-footer .lang-switch a { min-height: 44px; min-width: 44px; justify-content: center; }
+  .site-footer .lang-switch a { padding: 0 0.5rem; }
+  .site-footer .lang-switch__sep { display: none; }
+  .site-footer .lang-switch { gap: 0 0.25rem; }
+  .site-footer .lang-switch__label { flex-basis: 100%; }
+  .site-footer .lang-switch a:first-of-type { margin-left: -0.5rem; }
+}
 /* vi/es header nav (navfix 2026-10-29, CSS only, translated text untouched).
    One-row desktop nav from vi >=1200px / es >=1240px at >=14px type; drawer below that (EN keeps its own <=1100px drawer). */
 @media (min-width: 1101px) and (max-width: 1199px) {
@@ -1803,4 +1831,34 @@ html:is([lang^="es"],[lang^="vi"]) .mf-card__title, html:is([lang^="es"],[lang^=
   .wn-caption, .world-network.wn-compact .wn-caption,
   .mp-note { font-size: 0.8125rem; }
   .mp-data { font-size: 0.75rem; }
+}
+/* ---- human photos: 6 slots from tools/photo_slots.json ---- */
+.gp-photo { display: block; width: 100%; height: auto; background: var(--gt-canvas-deep); }
+.split-media img.gp-photo { aspect-ratio: 4/3; object-fit: cover; background: var(--gt-canvas-deep); }
+.home-steps--photos li.has-photo { display: flex; flex-direction: column; }
+.step-photo { margin: 0 0 1.125rem; border-radius: var(--gt-radius-md); overflow: hidden;
+  border: 1px solid var(--gt-glass-border); box-shadow: var(--gt-shadow-sm); background: var(--gt-canvas-deep); }
+.step-photo img { aspect-ratio: 3/2; object-fit: cover; }
+@media (max-width: 1020px) and (min-width: 561px) {
+  .home-steps--photos li.has-photo { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    grid-template-rows: auto auto 1fr; column-gap: 1.25rem; align-items: start; }
+  .home-steps--photos li.has-photo .step-photo { grid-row: 1 / span 3; margin: 0; }
+  .home-steps--photos li.has-photo > :not(.step-photo) { grid-column: 2; }
+}
+/* ---- credibility upgrades U2-U5 (shared EN/vi/es) ---- */
+.mf-note { max-width: none; margin-top: 1.25rem; padding-top: 0.75rem; border-top: 1px solid var(--gt-line); font-size: 0.8125rem; color: #5A6280; }
+.mf-note a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.mf-note a:focus-visible { outline: 2px solid var(--gt-indigo); outline-offset: 2px; border-radius: 2px; }
+.mf-marker { margin-left: 0.1em; }
+.mf-note .mf-marker { margin: 0 0.2em 0 0; }
+@media (min-width: 761px) {
+  .mp-note { font-size: 0.8125rem; }
+  .mp-steps small, .matching-path.mp-compact .mp-steps small { font-size: 0.75rem; }
+}
+.split-media img[src*="furniture-factory-editorial"], .split-media img[src*="craft-people-editorial"] { height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+@media (min-width: 1101px) { html:lang(vi) .nav .lang-switch a, html:lang(es-MX) .nav .lang-switch a { min-height: 32px; } }
+.page-stamp { margin: 0.75rem 0 0; font-size: 0.8125rem; line-height: 1.5; color: #5A6280; }
+@media (max-width: 760px) {
+  .split-media img { height: auto; aspect-ratio: 4 / 3; }
+  .hero-bg-photo { inset: 0 0 auto 0; height: auto; aspect-ratio: 4 / 3; -webkit-mask-image: linear-gradient(#000 60%, transparent); mask-image: linear-gradient(#000 60%, transparent); }
 }
