@@ -1,0 +1,42 @@
+# Globex Trade
+
+> Globex Trade (getglobex.com) is an AI-powered matching marketplace for US importers and suppliers worldwide. Bring your HS code, get a ranked shortlist of suppliers already shipping on US import lanes, then a free matched intro. Priority seed origins are Vietnam, India and Mexico. Globex Trade is not a trading company or a product catalog, and it does not take title to goods.
+
+Key facts (from the site):
+
+- Paths: buyers request a free match; exporters create a free seller profile (join); both are matched on US-lane shipment signals, not storefront claims.
+- Pricing: match requests and matched intros are free while the marketplace densifies; a commission comes later only if density and closed trades justify it.
+- Any HS code can be submitted. Furniture (HS 94) and plastics (HS 39) pages are example lane context only.
+- Status: the site is live, but the match request, seller profile and contact forms are non-collecting previews. Nothing is stored or sent yet.
+- Globex Trade publishes no ratings, testimonials, certifications, ESG scores, supplier counts, GMV or turnaround SLAs.
+
+## Main pages
+
+- [Home](https://getglobex.com/): AI matching for US importers and suppliers worldwide: overview, priority origins and how matching works.
+- [For buyers](https://getglobex.com/buyers.html): Customs-proven shortlists for US importers, with free intros while the marketplace densifies.
+- [For sellers](https://getglobex.com/sellers.html): Free seller profile and AI matching to US importers in your HS.
+- [How it works](https://getglobex.com/how-it-works.html): Match path: match request → US-lane shortlist → free matched intro.
+- [About](https://getglobex.com/about.html): What Globex Trade is (and isn't), plus the free-first, commission-later model.
+- [FAQ](https://getglobex.com/faq.html): Straight answers on free matches, finding your HS, origins, timing and lane-scale numbers.
+
+## Get started
+
+- [Request a free match](https://getglobex.com/rfq.html): Buyer match request by HS code (non-collecting preview form).
+- [Create a free seller profile](https://getglobex.com/sellers/join.html): Seller join by HS, origin and US-lane proof (non-collecting preview form).
+- [Contact](https://getglobex.com/contact.html): Paths for match requests, applying to sell, or partnership and other questions.
+
+## Example lanes
+
+- [Categories](https://getglobex.com/categories.html): Browse example US import categories, or enter your own HS.
+- [Furniture (HS 94)](https://getglobex.com/furniture.html): Example lane context for furniture, using public trade data.
+- [Plastics (HS 39)](https://getglobex.com/plastics.html): Example lane context for plastics articles, using public trade data.
+
+## Blog
+
+- [How Globex matching works](https://getglobex.com/blog/how-globex-matching-works.html): Signal → customs-proven shortlist → free intro.
+- [Global furniture matching without a six-month sourcing trip](https://getglobex.com/blog/global-furniture-matching.html): How US importers shortlist Vietnam, India and Mexico suppliers from US-lane signals.
+
+## Optional
+
+- [Privacy](https://getglobex.com/privacy.html): Draft privacy notice.
+- [Terms](https://getglobex.com/terms.html): Draft terms of use.
