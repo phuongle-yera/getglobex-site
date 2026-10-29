@@ -92,14 +92,13 @@
       <ul class="hero-points">
         <li>Ranked match from US import records</li>
         <li>Any product, any HS code</li>
-        <li>Nothing is stored yet</li>
       </ul>
       <div class="have-ready" id="have-ready-match">
         <h2>Have ready</h2>
         <ul>
           <li>A short description of your product</li>
           <li>HS code if you know it (<a href="https://hts.usitc.gov/" target="_blank" rel="noopener noreferrer">HTS.usitc.gov</a>)</li>
-          <li>Preferred origins (optional — multi-origin OK)</li>
+          <li>Supplier country, if you have one in mind (optional)</li>
           <li>Volume band / urgency</li>
         </ul>
       </div>
@@ -114,8 +113,8 @@
     </div>
     <div>
       <div id="rfqSuccess" class="form-success" tabindex="-1" role="status">
-        <h3>Request ready — not submitted yet</h3>
-        <p>Nothing was stored or emailed. When capture is live, this becomes a real AI match request on the marketplace. We will not invent supplier counts or timelines.</p>
+        <h3>Thanks, your request summary is ready</h3>
+        <p>Online requests open soon.</p>
         <div id="rfqSummary" class="form-summary" hidden></div>
         <div class="row" style="margin-top:1rem;gap:.75rem;flex-wrap:wrap">
           <button type="button" id="rfqCopySummary" class="btn btn-sm" hidden>Copy summary (stays on your device)</button>
@@ -174,16 +173,9 @@
           <span class="field-error"></span>
         </label>
         <input type="hidden" name="furniture_niche_interest" value="Other">
-        <fieldset style="border:0;padding:0;margin:0">
-          <legend style="font-size:.82rem;font-weight:650;color:var(--gt-indigo);margin-bottom:.5rem">Preferred origins (optional)</legend>
-          <div class="check-grid">
-            <label class="check-item"><input type="checkbox" name="preferred_origins" value="ANY"> Any / not sure</label>
-            <label class="check-item"><input type="checkbox" name="preferred_origins" value="VN"> Vietnam</label>
-            <label class="check-item"><input type="checkbox" name="preferred_origins" value="IN"> India</label>
-            <label class="check-item"><input type="checkbox" name="preferred_origins" value="MX"> Mexico</label>
-            <label class="check-item"><input type="checkbox" name="preferred_origins" value="OTHER"> Other</label>
-          </div>
-        </fieldset>
+        <label>Supplier country (optional)
+          <input name="preferred_origins" type="text" placeholder="Any country" autocomplete="off" data-scope="acquisition">
+        </label>
         <div class="row">
           <label><span class="label-row"><span>Annual volume band / PO size</span><span class="optional">Optional</span></span>
             <select name="volume_band">
@@ -213,7 +205,7 @@
           <span>OK to contact me about this match request. *</span>
         </label>
         <button type="submit" class="btn btn-accent btn-block">Request a free match</button>
-        <p class="form-note">Draft form — nothing is stored or sent by GetGlobex yet. Submit only checks required fields and shows a preview on this page.</p>
+        <p class="form-note">Online requests open soon.</p>
       </form>
     </div>
   </div>
