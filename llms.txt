@@ -1,6 +1,6 @@
-# Globex Trade
+# GetGlobex
 
-> Globex Trade (getglobex.com) is an AI-powered matching marketplace for US importers and suppliers worldwide. We are not a broker, and we don't offer forex, CFD or investment products. Bring your HS code, get a ranked shortlist of suppliers already shipping on US import lanes, then a free matched intro. Priority seed origins are Vietnam, India and Mexico. Globex Trade is not a trading company or a product catalog, and it does not take title to goods.
+> GetGlobex (getglobex.com) is an AI supplier-matching marketplace. We are not a broker, and we don't offer forex, CFD or investment products. It matches US importers with suppliers worldwide: bring your HS code, get a ranked shortlist of suppliers already shipping on US import lanes, then a free matched intro. Priority seed origins are Vietnam, India and Mexico. GetGlobex is not a trading company or a product catalog, and it does not take title to goods.
 
 Key facts (from the site):
 
@@ -8,7 +8,7 @@ Key facts (from the site):
 - Pricing: match requests and matched intros are free while the marketplace densifies; a commission comes later only if density and closed trades justify it.
 - Any HS code can be submitted. Furniture (HS 94) and plastics (HS 39) pages are example lane context only.
 - Status: the site is live, but the match request, seller profile and contact forms are non-collecting previews. Nothing is stored or sent yet.
-- Globex Trade publishes no ratings, testimonials, certifications, ESG scores, supplier counts, GMV or turnaround SLAs.
+- GetGlobex publishes no ratings, testimonials, certifications, ESG scores, supplier counts, GMV or turnaround SLAs.
 
 ## Main pages
 
@@ -16,7 +16,7 @@ Key facts (from the site):
 - [For buyers](https://getglobex.com/buyers.html): Customs-proven shortlists for US importers, with free intros while the marketplace densifies.
 - [For sellers](https://getglobex.com/sellers.html): Free seller profile and AI matching to US importers in your HS.
 - [How it works](https://getglobex.com/how-it-works.html): Match path: match request → US-lane shortlist → free matched intro.
-- [About](https://getglobex.com/about.html): What Globex Trade is (and isn't), plus the free-first, commission-later model.
+- [About](https://getglobex.com/about.html): What GetGlobex is (and isn't), plus the free-first, commission-later model.
 - [FAQ](https://getglobex.com/faq.html): Straight answers on free matches, finding your HS, origins, timing and lane-scale numbers.
 
 ## Get started
@@ -33,7 +33,7 @@ Key facts (from the site):
 
 ## Blog
 
-- [How Globex matching works](https://getglobex.com/blog/how-globex-matching-works.html): Signal → customs-proven shortlist → free intro.
+- [How GetGlobex matching works](https://getglobex.com/blog/how-globex-matching-works.html): Signal → customs-proven shortlist → free intro.
 - [Global furniture matching without a six-month sourcing trip](https://getglobex.com/blog/global-furniture-matching.html): How US importers shortlist Vietnam, India and Mexico suppliers from US-lane signals.
 
 ## Optional
