@@ -1603,13 +1603,28 @@ label.hs-field-glass input {
   .nav { left: auto; width: min(400px, 100%); border-left: 1px solid var(--gt-line); border-bottom-left-radius: var(--gt-radius-lg); }
 }
 
-.mf-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.mf-card { gap: .25rem; }
-.mf-figure { margin: 0 0 1rem; display: flex; flex-direction: column; gap: .3rem; }
-.mf-num { font-family: var(--gt-font-display); font-size: clamp(2.25rem, 1.6rem + 2.2vw, 3rem); font-weight: 700; line-height: 1; letter-spacing: -0.02em; color: var(--gt-ink-on-light); }
-.mf-label { font-size: .875rem; font-weight: 500; color: var(--gt-stone); line-height: 1.4; }
-.mf-card h3 { margin: 0 0 1.25rem; font-size: 1.2rem; overflow-wrap: anywhere; flex: 1; }
-.mf-actions { display: flex; flex-wrap: wrap; gap: .5rem .75rem; }
-.mf-note { margin: 1.1rem 0 0; font-size: .82rem; color: var(--gt-stone); max-width: 46rem; }
-@media (max-width: 760px) { .mf-cards { grid-template-columns: 1fr; } }
-.mf-actions--buyer { align-items: center; gap: .5rem 1.25rem; }
+/* "Where we're matching first" / "Where US importers are buying" cards: design-polish v2 (Nova spec v2 §4, adapted to .mf-*) */
+.mf-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; align-items: stretch; }
+.mf-card { position: relative; display: flex; flex-direction: column;
+  background: var(--gt-glass-strong); border: 1px solid var(--gt-glass-border);
+  border-radius: var(--gt-radius-lg); box-shadow: var(--gt-shadow-sm); padding: 1.5rem 1.5rem 1.375rem; color: var(--gt-ink); }
+.mf-card__title { font-size: var(--gt-fs-path-title); line-height: 1.3; letter-spacing: -0.01em; margin: 0 0 .25rem; color: var(--gt-ink); }
+.mf-card__title a { color: inherit; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 3px; }
+.mf-card__title a:hover { text-decoration-color: var(--gt-indigo); }
+.mf-tag { font-size: .8125rem; font-weight: 500; color: var(--gt-stone); margin: 0 0 1.125rem; font-variant-numeric: tabular-nums; text-transform: none; letter-spacing: normal; }
+.mf-figure { display: flex; flex-direction: column-reverse; justify-content: flex-end; gap: .375rem;
+  margin: 0 0 1.375rem; padding-top: 1rem; border-top: 1px solid var(--gt-line); }
+.mf-num { margin: 0; font-family: var(--gt-font-display);
+  font-size: clamp(2.25rem, 4vw, 3rem); font-weight: 600; line-height: 1; letter-spacing: -0.01em;
+  color: var(--gt-indigo); font-variant-numeric: lining-nums tabular-nums; white-space: nowrap; }
+.mf-label { font-size: .875rem; font-weight: 500; line-height: 1.4; color: var(--gt-stone); }
+.mf-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .625rem 1.25rem; margin-top: auto; }
+.mf-note { margin-top: 1rem; font-size: .8125rem; line-height: 1.5; color: var(--gt-stone); max-width: 70ch; }
+@media (max-width: 760px) {
+  .mf-cards { grid-template-columns: 1fr; gap: .875rem; }
+  .mf-card { padding: 1.125rem 1.125rem 1.25rem; }
+  .mf-figure { margin-bottom: 1.125rem; padding-top: .875rem; }
+  .mf-actions { flex-direction: column; align-items: stretch; gap: .375rem; }
+  .mf-actions .btn { width: 100%; min-height: 44px; }
+  .mf-actions .path-card__link { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 44px; }
+}
