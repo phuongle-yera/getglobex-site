@@ -662,7 +662,7 @@ body.page-match main > .page-hero:first-child {
   box-shadow: 0 0 0 3px rgba(91, 108, 255, 0.22);
 }
 
-/* P0 matching marketplace hero — world-market mood + glass */
+/* P0 AI matching platform hero — world-market mood + glass */
 .hero-matching {
   padding-bottom: 0;
   overflow: hidden;
@@ -1885,3 +1885,35 @@ html:is([lang^="es"],[lang^="vi"]) .mf-card__title, html:is([lang^="es"],[lang^=
 }
 .signings__note.signings__small { margin-top: .5rem; }
 @media (max-width: 640px) { .signings__item:first-child .signings__media img { transform: scale(1.28); transform-origin: 50% 8%; } }
+
+/* ---- techfix 30 Oct: content-list markers + 44px tap targets (layout-neutral) ---- */
+/* Lists: markers back only on plain content lists inside <main>; every classed list (cards, steps, chips, nav, footer) keeps list-style none. */
+main ul:not([class]), main ul.include-list { list-style: disc; }
+main ol:not([class]) { list-style: decimal; }
+main .why-col ul:not([class]) { list-style: none; }            /* has its own dot markers */
+.post-body :is(ul, ol):not([class]) { padding-left: 1.25rem; }
+main :is(ul, ol):not([class]) > li::marker, main ul.include-list > li::marker { color: currentColor; }
+/* Skip link: 44px when focused */
+.skip:focus { display: inline-flex; align-items: center; min-height: 44px; }
+/* Header logo: 32px -> 44px hit area, outer box unchanged */
+.site-header .logo { padding-block: 6px; margin-block: -6px; }
+/* Card links: vertical padding on inline links does not move the line box */
+.path-card__title-link { padding-block: 12px; }
+.mf-card__title a, .blog-card h2 a { padding-block: 10px; }
+.who-chip a { padding-block: 10px; margin-block: -10px; }
+@media (min-width: 761px) {
+  .path-card__link { padding-block: 10.5px; margin-block: -10.5px; }
+  .guide-links a { padding-block: 12px; }   /* <=760px these are already 44px flex rows */
+}
+@media (min-width: 1101px) {
+  /* Desktop nav links 28px -> 44px; current-page underline stays where it was */
+  .nav-links a { padding-block: calc(0.35rem + 8px); margin-block: -8px; }
+  .nav-links a[aria-current="page"] { box-shadow: none; background: linear-gradient(var(--gt-terracotta-cta), var(--gt-terracotta-cta)) no-repeat left 0 bottom 8px / 100% 2px; }
+  /* Footer links 24px -> 44px, same spacing */
+  .footer-grid div a:not(.logo) { padding-block: 10.2px; margin-top: 0; margin-bottom: calc(0.5rem - 20.4px); }  /* sibling gap stays 0.5rem */
+  .footer-grid div .footer-h + a:not(.logo) { margin-top: -10.2px; }
+  .footer-grid div a:not(.logo):last-child { margin-bottom: calc(0.5rem - 10.2px); }
+  /* EN/ES switcher: header 32px -> 44px, footer 27px -> 44px, outer boxes unchanged */
+  .site-header .nav .lang-switch a[data-lang] { min-height: 44px; margin-block: -6px; }
+  .site-footer .lang-switch a[data-lang] { min-height: 44px; margin-block: calc((27.3px - 44px) / 2); }
+}
