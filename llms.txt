@@ -1,15 +1,15 @@
 # GetGlobex
 
-> GetGlobex (getglobex.com) is an AI supplier-matching marketplace for US importers. Tell us the product you need, and we shortlist suppliers worldwide that are already shipping it to the US. Know your HS code? Add it. It's free to request a match.
+> GetGlobex (getglobex.com) is an AI supplier-matching platform for US importers. Tell us the product you need, and we shortlist suppliers worldwide that are already shipping it to the US. Know your HS code? Add it. It's free to request a match.
 
-GetGlobex (getglobex.com) is an AI supplier-matching marketplace. We are not a broker, and we don't offer forex, CFD or investment products.
+GetGlobex (getglobex.com) is an AI supplier-matching platform. We are not a broker, and we don't offer forex, CFD or investment products.
 
 ## How we differ
 
 - Catalogs list millions of sellers. GetGlobex shortlists the few already shipping your product to the US.
 - Not a trader, not an agent: buyers and suppliers deal directly, with no paid ranking.
 - Built for small and mid-size US importers. Any product, suppliers worldwide.
-- Not a catalog marketplace: you don't scroll through listings. You describe what you need and get a short list.
+- Not a product catalog: you don't scroll through listings. You describe what you need and get a short list.
 - Evidence: we look at public US customs and import records (for example, bill of lading records). That is a signal, not a certification.
 - We're matching first in furniture & home furnishings and plastic packaging & household products; any product is welcome.
 
