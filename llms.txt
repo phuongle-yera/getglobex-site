@@ -46,16 +46,8 @@ GetGlobex (getglobex.com) is an AI supplier-matching marketplace. We are not a b
 
 ## Languages
 
-- English is the main language of getglobex.com. Five pages are also available in Vietnamese (/vi/) and in Spanish for Mexico (/es/). All other pages are in English only.
-- Each translated page links to its English version and its other language version with hreflang. The English page is the default.
-
-### Tiếng Việt (vi)
-
-- [Trang chủ (Home)](https://getglobex.com/vi/): Vietnamese version of the home page.
-- [Dành cho nhà cung cấp (For suppliers)](https://getglobex.com/vi/sellers.html): Vietnamese version of the For suppliers page.
-- [Đăng ký nhà cung cấp (Supplier sign-up)](https://getglobex.com/vi/sellers/join.html): Vietnamese version of the supplier sign-up page.
-- [Cách hoạt động (How it works)](https://getglobex.com/vi/how-it-works.html): Vietnamese version of the How it works page.
-- [Hỏi đáp (FAQ)](https://getglobex.com/vi/faq.html): Vietnamese version of the FAQ.
+- English is the main language of getglobex.com. Five pages are also available in Spanish for Mexico (/es/). All other pages are in English only.
+- Each translated page links to its English version with hreflang. The English page is the default.
 
 ### Español (México) (es-MX)
 
