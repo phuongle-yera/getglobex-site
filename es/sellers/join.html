@@ -142,7 +142,7 @@
           <a href="/es/" class="btn btn-sm">Volver al inicio</a>
         </div>
       </div>
-<form id="joinForm" class="form-card" novalidate data-schema="seller-v1.1">
+<form id="joinForm" class="form-card" novalidate data-schema="seller-v1.2">
         <div class="row">
           <label>Nombre de la empresa *
             <input name="company_name" type="text" required autocomplete="organization">
@@ -165,6 +165,14 @@
         <label>¿Qué productos vende? *
           <input name="category_text" type="text" required placeholder="Describa lo que fabrica o vende, p. ej., bolsas tote de algodón, lámparas LED" data-scope="acquisition">
           <span class="field-error"></span>
+        </label>
+        <label><span class="label-row"><span>Categoría</span><span class="optional">Opcional</span></span>
+          <select name="category_code" data-scope="acquisition">
+            <option value="">Cualquier producto</option>
+            <option value="A01" data-category="Agriculture (beta)">Agricultura (beta) — Plátano (fresco)</option>
+            <option value="A02" data-category="Agriculture (beta)">Agricultura (beta) — Durián (fresco / congelado)</option>
+            <option value="A03" data-category="Agriculture (beta)">Agricultura (beta) — Café (verde, tostado o soluble)</option>
+          </select>
         </label>
         <div class="row">
           <label>País *
