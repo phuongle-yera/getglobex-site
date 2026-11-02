@@ -122,11 +122,19 @@
           <a href="/" class="btn btn-sm">Back to home</a>
         </div>
       </div>
-<form id="rfqForm" class="form-card" novalidate data-schema="buyer-v1.1">
+<form id="rfqForm" class="form-card" novalidate data-schema="buyer-v1.2">
         <p class="eyebrow" style="margin:0">Tell us what you need</p>
         <label>What do you need? Describe the product *
           <textarea name="description" rows="4" required placeholder="e.g. solid wood dining chairs, about 2,000 units, FSC preferred" data-scope="acquisition"></textarea>
           <span class="field-error"></span>
+        </label>
+        <label><span class="label-row"><span>Category</span><span class="optional">Optional</span></span>
+          <select name="category_code" data-scope="acquisition">
+            <option value="">Any product (described above)</option>
+            <option value="A01" data-category="Agriculture (beta)">Agriculture (beta) — Banana (fresh)</option>
+            <option value="A02" data-category="Agriculture (beta)">Agriculture (beta) — Durian (fresh / frozen)</option>
+            <option value="A03" data-category="Agriculture (beta)">Agriculture (beta) — Coffee (green, roasted or instant)</option>
+          </select>
         </label>
         <div class="row">
           <label>Company name *
