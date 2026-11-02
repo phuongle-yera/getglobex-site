@@ -127,7 +127,7 @@
           <a href="/" class="btn btn-sm">Back to home</a>
         </div>
       </div>
-<form id="joinForm" class="form-card" novalidate data-schema="seller-v1.1">
+<form id="joinForm" class="form-card" novalidate data-schema="seller-v1.2">
         <div class="row">
           <label>Company name *
             <input name="company_name" type="text" required autocomplete="organization">
@@ -150,6 +150,14 @@
         <label>What products do you sell? *
           <input name="category_text" type="text" required placeholder="Describe what you make or sell, e.g. cotton tote bags, LED lamps" data-scope="acquisition">
           <span class="field-error"></span>
+        </label>
+        <label><span class="label-row"><span>Category</span><span class="optional">Optional</span></span>
+          <select name="category_code" data-scope="acquisition">
+            <option value="">Any product (described above)</option>
+            <option value="A01" data-category="Agriculture (beta)">Agriculture (beta) — Banana (fresh)</option>
+            <option value="A02" data-category="Agriculture (beta)">Agriculture (beta) — Durian (fresh / frozen)</option>
+            <option value="A03" data-category="Agriculture (beta)">Agriculture (beta) — Coffee (green, roasted or instant)</option>
+          </select>
         </label>
         <div class="row">
           <label>Country *
