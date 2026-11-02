@@ -1917,3 +1917,7 @@ main :is(ul, ol):not([class]) > li::marker, main ul.include-list > li::marker { 
   .site-header .nav .lang-switch a[data-lang] { min-height: 44px; margin-block: -6px; }
   .site-footer .lang-switch a[data-lang] { min-height: 44px; margin-block: calc((27.3px - 44px) / 2); }
 }
+
+/* Agriculture (beta) 2026-11-02: third matching-first card + beta note (EN 3-up on wide screens; es uses the auto-fit rule) */
+@media (min-width: 1021px) { html[lang="en"] .mf-cards--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.mf-beta-note { font-size: .9375rem; line-height: 1.55; color: var(--gt-stone); margin: 0 0 1.125rem; }
