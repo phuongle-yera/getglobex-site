@@ -51,6 +51,7 @@
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://getglobex.com/es/how-it-works.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getglobex.com/how-it-works.html"/>
   </url>
+  <url><loc>https://getglobex.com/how-we-check-suppliers.html</loc><lastmod>2026-11-05T11:40:00+07:00</lastmod></url>
   <url>
     <loc>https://getglobex.com/es/how-it-works.html</loc>
     <lastmod>2026-10-29T16:24:07+07:00</lastmod>
@@ -60,11 +61,11 @@
   </url>
   <url><loc>https://getglobex.com/categories.html</loc><lastmod>2026-10-29T16:01:45+07:00</lastmod></url>
   <url><loc>https://getglobex.com/furniture.html</loc><lastmod>2026-10-29T16:01:45+07:00</lastmod></url>
-  <url><loc>https://getglobex.com/plastics.html</loc><lastmod>2026-10-29T16:01:45+07:00</lastmod></url>
+  <url><loc>https://getglobex.com/plastics.html</loc><lastmod>2026-11-05T12:30:00+07:00</lastmod></url>
   <url><loc>https://getglobex.com/about.html</loc><lastmod>2026-10-29T12:36:53+07:00</lastmod></url>
   <url>
     <loc>https://getglobex.com/faq.html</loc>
-    <lastmod>2026-10-29T16:01:45+07:00</lastmod>
+    <lastmod>2026-11-05T13:10:00+07:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://getglobex.com/faq.html"/>
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://getglobex.com/es/faq.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getglobex.com/faq.html"/>
@@ -77,11 +78,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://getglobex.com/faq.html"/>
   </url>
   <url><loc>https://getglobex.com/contact.html</loc><lastmod>2026-10-29T12:57:41+07:00</lastmod></url>
-  <url><loc>https://getglobex.com/blog/</loc><lastmod>2026-11-05T11:30:00+07:00</lastmod></url>
+  <url><loc>https://getglobex.com/blog/</loc><lastmod>2026-11-05T12:30:00+07:00</lastmod></url>
   <url><loc>https://getglobex.com/blog/how-globex-matching-works.html</loc><lastmod>2026-10-29T16:02:32+07:00</lastmod></url>
   <url><loc>https://getglobex.com/blog/getglobex-vs-supplier-directories.html</loc><lastmod>2026-10-29T13:46:53+07:00</lastmod></url>
   <url><loc>https://getglobex.com/blog/check-if-supplier-ships-to-us.html</loc><lastmod>2026-10-29T13:46:53+07:00</lastmod></url>
   <url><loc>https://getglobex.com/blog/us-trade-agreements-for-importers.html</loc><lastmod>2026-11-05T11:30:00+07:00</lastmod></url>
+  <url><loc>https://getglobex.com/blog/plastic-packaging-household-products-suppliers.html</loc><lastmod>2026-11-05T12:30:00+07:00</lastmod></url>
   <url><loc>https://getglobex.com/privacy.html</loc><lastmod>2026-10-29T12:36:53+07:00</lastmod></url>
   <url><loc>https://getglobex.com/terms.html</loc><lastmod>2026-10-29T12:36:53+07:00</lastmod></url>
 </urlset>

@@ -1,6 +1,6 @@
 # GetGlobex
 
-> GetGlobex (getglobex.com) is an AI supplier-matching platform for US importers. Tell us the product you need, and we shortlist suppliers worldwide that are already shipping it to the US. Know your HS code? Add it. It's free to request a match.
+> GetGlobex (getglobex.com) is an AI supplier-matching platform for US importers. Tell us the product you need, and we shortlist suppliers worldwide that are already shipping it to the US. Have an HS code? Add it. It's free to request a match.
 
 GetGlobex (getglobex.com) is an AI supplier-matching platform. We are not a broker, and we don't offer forex, CFD or investment products.
 
@@ -11,11 +11,11 @@ GetGlobex (getglobex.com) is an AI supplier-matching platform. We are not a brok
 - Built for small and mid-size US importers. Any product, suppliers worldwide.
 - Not a product catalog: you don't scroll through listings. You describe what you need and get a short list.
 - Evidence: we look at public US customs and import records (for example, bill of lading records). That is a signal, not a certification.
-- We're matching first in furniture & home furnishings and plastic packaging & household products; any product is welcome.
+- We're matching first in furniture & home furnishings, plastic packaging & household products, and agriculture; any product is welcome.
 
 ## Key facts
 
-- Buyers: describe your product to request a match. Know your HS code? Add it. If you're not sure of it, the official US tariff schedule is at https://hts.usitc.gov/.
+- Buyers: describe your product to request a match. Have an HS code? Add it. If you're not sure of it, the official US tariff schedule is at https://hts.usitc.gov/.
 - Suppliers: create a supplier profile with the products you make.
 - Request a free match: it's free to request.
 - GetGlobex is not a trading company. We don't buy, sell or hold goods.
@@ -33,16 +33,20 @@ GetGlobex (getglobex.com) is an AI supplier-matching platform. We are not a brok
 - [Request a free match](https://getglobex.com/rfq.html): Tell us your product (and HS code, if you know it).
 - [Supplier sign-up](https://getglobex.com/sellers/join.html): Create a supplier profile.
 - [Contact](https://getglobex.com/contact.html): Questions, partnerships and other requests.
-- [Categories](https://getglobex.com/categories.html): Browse example categories, or describe your own product.
+- [Categories](https://getglobex.com/categories.html): Browse categories, or describe your own product.
 - [Blog](https://getglobex.com/blog/): Guides on finding and comparing suppliers.
 - [How AI supplier matching works](https://getglobex.com/blog/how-globex-matching-works.html): A plain guide to AI supplier matching.
+- [Supplier directory vs AI matching](https://getglobex.com/blog/getglobex-vs-supplier-directories.html): How a supplier directory differs from AI matching, and when to use each.
+- [How to check if a supplier ships to the US](https://getglobex.com/blog/check-if-supplier-ships-to-us.html): What public US customs and import records can tell you about a supplier, and what they can't.
+- [US trade agreements for importers](https://getglobex.com/blog/us-trade-agreements-for-importers.html): Which US free trade agreements and duty-preference programs are in force in 2026.
 - [Privacy](https://getglobex.com/privacy.html): How we handle information.
 - [Terms](https://getglobex.com/terms.html): Terms of use.
 
-## Example category pages
+## Category pages
 
-- [Furniture & home furnishings](https://getglobex.com/furniture.html): Example category page.
-- [Plastic packaging & household products](https://getglobex.com/plastics.html): Example category page.
+- [Furniture & home furnishings](https://getglobex.com/furniture.html): Furniture & home furnishings sourcing for US importers.
+- [Plastic packaging & household products](https://getglobex.com/plastics.html): Plastic packaging & household products sourcing for US importers.
+- [Agriculture](https://getglobex.com/rfq.html): Banana, durian and coffee (HS 0803.90, 0810.60, 0901, 2101.11). US imports $15.6B (UN Comtrade, Aug 2025–Jul 2026). Describe what you need and we’ll match you.
 
 ## Languages
 
